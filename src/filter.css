@@ -1,0 +1,44 @@
+.filter {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 0 10px 50px;
+    list-style: none;
+    border-bottom: 1px solid #e8e8e8;
+    *min-height: 38px;
+}
+
+.filter > li {
+    font-size: 12px;
+    line-height: 38px;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    *float: left;
+}
+
+.filter > li:first-child {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+}
+
+.filter > li > a {
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #383838;
+    outline: none;
+}
+
+.filter > li.active > a {
+    color: #fff;
+    background-color: #08f;
+}
+
+.filter > li > a:hover {
+    color: #fff;
+    background-color: #08f;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "category",
+  "version": "1.0.0",
+  "description": "这是一个基于jQuery的分类标签选择列表",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diaocheng/category.git"
+  },
+  "keywords": [
+    "category",
+    "js",
+    "jquery"
+  ],
+  "author": "程刁",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diaocheng/category/issues"
+  },
+  "homepage": "https://github.com/diaocheng/category#readme"
+}

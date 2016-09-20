@@ -4,8 +4,7 @@
   "description": "这是一个基于jQuery的分类标签选择列表",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "node server.js"
   },
   "repository": {
     "type": "git",

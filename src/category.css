@@ -1,4 +1,4 @@
-.filter {
+.category {
     position: relative;
     margin: 0 auto;
     padding: 10px 0 10px 50px;
@@ -7,7 +7,7 @@
     *min-height: 38px;
 }
 
-.filter > li {
+.category > li {
     font-size: 12px;
     line-height: 38px;
     display: inline-block;
@@ -16,7 +16,7 @@
     *float: left;
 }
 
-.filter > li:first-child {
+.category > li:first-child {
     position: absolute;
     top: 10px;
     left: 0;
@@ -25,20 +25,20 @@
     text-align: center;
 }
 
-.filter > li > a {
-    padding: 3px 10px;
+.category > li > a {
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     color: #383838;
     outline: none;
 }
 
-.filter > li.active > a {
+.category > li.active > a {
     color: #fff;
     background-color: #08f;
 }
 
-.filter > li > a:hover {
+.category > li > a:hover {
     color: #fff;
     background-color: #08f;
 }

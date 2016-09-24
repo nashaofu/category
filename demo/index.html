@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<link rel="stylesheet" type="text/css" href="../dist/category.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div class="container">
+	<ul id="category-1" class="category"></ul>
+	<ul id="category-2" class="category"></ul>
+	<ul id="category-3" class="category"></ul>
+	<ul id="category-4" class="category"></ul>
+</div>
+<div class="container">
+<div class="grid-box">
+	<div>
+		<div>从服务器加载数据，重写第一个列表并传入参数以修改插件配置，如下传入可选参数key(返回数据标)和请求的表单数据formdata</div>
+		<button id="button-1">确定</button>
+<h2>Code:</h2>
+<pre><code>
+// 请求远程数据
+$("#button-1").click(function() {
+    $("#category-1").category("getData", {
+        url: "json/test1.json",
+        key: "category",
+        formdata: {
+            test: "this is a test formdata"
+        }
+    });
+});
+</code></pre>
+	</div>
+</div>
+<div class="grid-box">
+	<div>
+		<div>从加载本地数据，重写第二个列表并传入参数以修改插件配置</div>
+		<button id="button-2">确定</button>
+<h2>Code:</h2>
+<pre><code>
+// 显示本地数据,并且数据下标不变
+$("#button-2").click(function() {
+    $("#category-2").category("render", {
+        data: {
+            tag: ["本地测试数据1-1", "本地测试数据1-2", "本地测试数据1-3", "本地测试数据1-4", "本地测试数据1-5", "本地测试数据1-6"]
+        }
+    });
+});
+</code></pre>
+	</div>
+</div>
+<div class="grid-box">
+	<div>
+		<div class="desc">从服务器加载数据，重写第三个列表并传入参数以修改插件配置</div>
+		<button id="button-3">确定</button>
+<pre><code>
+// 请求服务器数据，并改变插件配置
+$("#button-3").click(function() {
+    $("#category-3").category("getData", {
+        name: "test",
+        key: 'test',
+        url: "json/test2.json",
+        formdata: {
+            test: 'this is a test formdata'
+        },
+        all: {
+            name: "所有",
+            value: "all"
+        }
+    });
+});
+</code></pre>
+	</div>
+</div>
+</div>
+<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../dist/category.min.js"></script>
+<script type="text/javascript">
+$("#category-1").category({
+    name: "分类1",
+    data: ["分类1-1", "分类1-2", "分类1-3", "分类1-4", "分类1-5", "分类1-6"]
+});
+$("#category-2").category({
+    name: "分类2",
+    key: "tag",
+    data: {
+        tag: {
+            1: "分类2-1",
+            2: "分类2-2",
+            3: "分类2-3",
+            4: "分类2-4",
+            5: "分类2-5",
+            6: "分类2-6",
+            7: "分类2-7",
+            8: "分类2-8",
+            9: "分类2-9",
+            10: "分类2-10"
+        }
+    }
+});
+$("#category-3").category({
+    name: "分类3",
+    key: "category",
+    data: {
+        category: ["分类3-1", "分类3-2", "分类3-3", "分类3-4", "分类3-5", "分类3-6"]
+    }
+});
+$("#category-4").category({
+    url: "json/json.json",
+    key: "category"
+});
+// 请求远程数据
+$("#button-1").click(function() {
+    $("#category-1").category("getData", {
+        url: "json/test1.json",
+        key: "category",
+        formdata: {
+            test: "this is a test formdata"
+        }
+    });
+});
+// 显示本地数据,并且数据下标不变
+$("#button-2").click(function() {
+    $("#category-2").category("render", {
+        data: {
+            tag: ["本地测试数据1-1", "本地测试数据1-2", "本地测试数据1-3", "本地测试数据1-4", "本地测试数据1-5", "本地测试数据1-6"]
+        }
+    });
+});
+// 请求服务器数据，并改变插件配置
+$("#button-3").click(function() {
+    $("#category-3").category("getData", {
+        name: "test",
+        key: 'test',
+        url: "json/test2.json",
+        formdata: {
+            test: 'this is a test formdata'
+        },
+        all: {
+            name: "所有",
+            value: "all"
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/*!
+ * category v1.0.0 (https://github.com/diaocheng/category#readme)
+ * Copyright 2016 程刁
+ * Licensed under MIT
+ */
+.category{position:relative;margin:0 auto;padding:10px 0 10px 50px;list-style:none;border-bottom:1px solid #e8e8e8}.category>li{font-size:12px;line-height:38px;display:inline-block;padding-right:5px;padding-left:5px}.category>li:first-child{position:absolute;top:10px;left:0;width:40px;height:100%;text-align:center}.category>li>a{padding:5px 10px;text-align:center;text-decoration:none;color:#383838;outline:0}.category>li.active>a,.category>li>a:hover{color:#fff;background-color:#08f}

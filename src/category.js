@@ -4,6 +4,8 @@
  * options={
  *     name: "筛选",
  *     key: null,
+ *     url:url,
+ *     formdata: null,
  *     all: {
  *         name: "全部",
  *         value: "all"

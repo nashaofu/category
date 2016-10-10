@@ -1,7 +1,7 @@
 # category
 这是一个基于jQuery的分类标签选择列表
 ## 插件示例
-[DEMO](https://diaocheng.github.io/category/)
+[DEMO](https://diaocheng.github.io/category/demo/)
 ## html
 	<ul id="category-1" class="category"></ul>
 	<ul id="category-2" class="category"></ul>
